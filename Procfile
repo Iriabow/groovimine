@@ -1,2 +1,2 @@
-release: sh -c 'rake db:migrate && rake redmine:load_default_data' 
+release: sh -c 'rake db:migrate' 
 web: bundle exec puma -C puma.rb
