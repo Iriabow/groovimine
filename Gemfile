@@ -7,6 +7,7 @@ gem "addressable", "2.4.0" if RUBY_VERSION < "2.0"
 if RUBY_VERSION < "2.1"
   gem "public_suffix", (RUBY_VERSION < "2.0" ? "~> 1.4" : "~> 2.0.5")
 end
+gem 'cmake-heroku'
 gem 'acts_as_list'
 gem 'haml', '~> 4.0.6'
 gem 'sass', '~> 3.4.15'
