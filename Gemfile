@@ -9,6 +9,9 @@ if RUBY_VERSION < "2.1"
 end
 gem 'acts_as_list'
 gem 'haml', '~> 4.0.6'
+gem 'sass', '~> 3.4.15'
+gem 'copyright-header', '~> 1.0.8'
+gem 'byebug', group: [:development, :test]
 gem "jquery-rails", "~> 3.1.4"
 gem "coderay", "~> 1.1.1"
 gem "request_store", "1.0.5"
