@@ -7,12 +7,11 @@ gem "addressable", "2.4.0" if RUBY_VERSION < "2.0"
 if RUBY_VERSION < "2.1"
   gem "public_suffix", (RUBY_VERSION < "2.0" ? "~> 1.4" : "~> 2.0.5")
 end
-gem "redmine_crm"
-gem 'acts_as_list'
-gem 'haml', '~> 4.0.6'
-gem 'sass', '~> 3.4.15'
-gem 'copyright-header', '~> 1.0.8'
-gem 'byebug', group: [:development, :test]
+gem 'togglv8'
+# as a dependency for togglv8
+gem 'awesome_print'
+gem 'will_paginate'
+
 gem "jquery-rails", "~> 3.1.4"
 gem "coderay", "~> 1.1.1"
 gem "request_store", "1.0.5"
