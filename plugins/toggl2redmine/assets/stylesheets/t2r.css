@@ -1,0 +1,72 @@
+/* UI States */
+.t2r-loading {
+  background-image: url("../images/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 15px;
+  min-width: 50px;
+}
+.t2r-loading * {
+  display: none;
+}
+.t2r-error {
+  background-color: #E6BBBA;
+}
+.t2r-success {
+  background-color: #C6EB86;
+}
+
+/* Forms */
+.t2r-form {
+  display: block;
+  margin-bottom: 2em;
+}
+
+/* Tables */
+.t2r-table {
+  margin-bottom: 2em !important;
+}
+.t2r-table th,
+.t2r-table td {
+  text-align: left !important;
+}
+.t2r-table th.checkbox,
+.t2r-table td.checkbox {
+  text-align: center !important;
+}
+.t2r-table td.activity {
+  width: 150px;
+}
+.t2r-table td.comments {
+  width: 30%;
+}
+.t2r-table th.status,
+.t2r-table td.status {
+  text-align: center !important;
+  width: 30px;
+}
+.t2r-table td.status span {
+  cursor: help;
+}
+.t2r-table th.hours,
+.t2r-table td.hours {
+  width: 50px;
+}
+.t2r-table td input,
+.t2r-table td select {
+  max-width: 100%;
+}
+.t2r-table td.comments input {
+  width: 100%;
+}
+.t2r-table tfoot {
+  border-top: 1px solid #e4e4e4;
+}
+
+/* Miscellaneous */
+#last-imported {
+  cursor: help;
+}
+#last-imported.t2r-loading {
+  display: inline-block;
+}
