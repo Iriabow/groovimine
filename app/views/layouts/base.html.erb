@@ -16,6 +16,7 @@
 <%= call_hook :view_layouts_base_html_head %>
 <!-- page specific tags -->
 <%= yield :header_tags -%>
+
 </head>
 <body class="<%= body_css_classes %>">
 <%= call_hook :view_layouts_base_body_top %>
@@ -85,9 +86,10 @@
         <%= render_project_jump_box %>
     </div>
     <% end %>
-    <img src="<%= Redmine::Utils.relative_url_root %>/images/grooving.gif" width="10%"style="margin-top: 15px; margin-left: 15px;"/>
-    <h1><%= page_header_title %></h1>
-
+    <div style="width:100%;">
+    <img style="display:inline-block;" src="<%= Redmine::Utils.relative_url_root %>/images/grooving.gif" width="10%"style="margin-top: 15px; margin-left: 15px;"/>
+    <h1 style="display:inline-block;"><%= page_header_title %></h1>
+    </div>
     <% if display_main_menu?(@project) %>
     <div id="main-menu" class="tabs">
         <%= render_main_menu(@project) %>
