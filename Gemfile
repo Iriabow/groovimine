@@ -11,6 +11,7 @@ gem 'togglv8'
 # as a dependency for togglv8
 gem 'awesome_print'
 gem 'will_paginate'
+gem 'redmine_extensions' unless Dir.exist?(File.expand_path('../../easyproject', __FILE__))
 
 gem "jquery-rails", "~> 3.1.4"
 gem "coderay", "~> 1.1.1"
